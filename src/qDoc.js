@@ -25,6 +25,7 @@ const responseInterceptors = [{
 }];
 
 const qDoc = async (config) => {
+  console.log('TESTING')
   const url = SenseUtilities.buildUrl(config);
   const session = enigma.create({ schema, url, responseInterceptors });
   const global = await session.open();
